@@ -1,4 +1,4 @@
-// JSnack 1
+// **********JSNACK 1
 // Il software deve chiedere per 5 volte all’utente di inserire un numero.
 // Il programma stampa la somma di tutti i numeri inseriti.
 // Esegui questo programma in due versioni, con il for e con il while
@@ -27,23 +27,32 @@
 // console.log('La somma dei numeri inseriti è', sum);
 
 
-// JSnack 2
+// **********JSNACK 2
 // Dare la possibilità di inserire due parole.
 // Verificare tramite una funzione che le due parole abbiano la stessa lunghezza.
 // Se hanno la stessa lunghezza, stamparle entrambe altrimenti stampare la più lunga delle due.
 
-const parolaUno = prompt('Inserisci la prima parola');
-const parolaDue = prompt('Inserisci la seconda parola');
+// const parolaUno = prompt('Inserisci la prima parola');
+// const parolaDue = prompt('Inserisci la seconda parola');
 
-if(parolaUno.length < parolaDue.length) {
-    console.log('La parola più lunga è', parolaDue);
-} else if(parolaUno.length > parolaDue.length) {
-    console.log('La parola più lunga è', parolaUno);
-} else {
-    console.log('Le parole inserite (', parolaUno,'e', parolaDue, ') hanno la stessa lunghezza');
-}
+// if(parolaUno.length < parolaDue.length) {
+//     console.log('La parola più lunga è', parolaDue);
+// } else if(parolaUno.length > parolaDue.length) {
+//     console.log('La parola più lunga è', parolaUno);
+// } else {
+//     console.log('Le parole inserite (', parolaUno,'e', parolaDue, ') hanno la stessa lunghezza');
+// }
 
 
-
-// JSnack 3
+// **********JSNACK 3
 // Stampa le potenze di 2 fino a 1000.
+
+let potenza = 1;
+let n = 0;
+
+while(potenza < 1000) {  
+    console.log('La potenza di 2 elevato a', n,'è',potenza);
+    
+    n++;
+    potenza *= 2;
+}
