@@ -3,15 +3,15 @@
 // Il programma stampa la somma di tutti i numeri inseriti.
 // Esegui questo programma in due versioni, con il for e con il while
 
-// // versione ciclo for
-// let sum = 0;
+// versione ciclo for
+let sum = 0;
 
-// for(let i = 0; i < 5; i++) {
-//     const num = parseInt(prompt('Inserisci un numero'));
-//     sum += num; 
-// }
+for(let i = 0; i < 5; i++) {
+    const num = parseInt(prompt('Inserisci un numero'));
+    sum += num; 
+}
 
-// console.log('La somma dei numeri inseriti è', sum);
+console.log('La somma dei numeri inseriti è', sum);
 
 // // versione ciclo while
 // let sum = 0;
@@ -32,16 +32,16 @@
 // Verificare tramite una funzione che le due parole abbiano la stessa lunghezza.
 // Se hanno la stessa lunghezza, stamparle entrambe altrimenti stampare la più lunga delle due.
 
-// const parolaUno = prompt('Inserisci la prima parola');
-// const parolaDue = prompt('Inserisci la seconda parola');
+const parolaUno = prompt('Inserisci la prima parola');
+const parolaDue = prompt('Inserisci la seconda parola');
 
-// if(parolaUno.length < parolaDue.length) {
-//     console.log('La parola più lunga è', parolaDue);
-// } else if(parolaUno.length > parolaDue.length) {
-//     console.log('La parola più lunga è', parolaUno);
-// } else {
-//     console.log('Le parole inserite (', parolaUno,'e', parolaDue, ') hanno la stessa lunghezza');
-// }
+if(parolaUno.length < parolaDue.length) {
+    console.log('La parola più lunga è', parolaDue);
+} else if(parolaUno.length > parolaDue.length) {
+    console.log('La parola più lunga è', parolaUno);
+} else {
+    console.log('Le parole inserite (', parolaUno,'e', parolaDue, ') hanno la stessa lunghezza');
+}
 
 
 // **********JSNACK 3
@@ -52,7 +52,7 @@ let n = 0;
 
 while(potenza < 1000) {  
     console.log('La potenza di 2 elevato a', n,'è',potenza);
-    
+
     n++;
     potenza *= 2;
 }
