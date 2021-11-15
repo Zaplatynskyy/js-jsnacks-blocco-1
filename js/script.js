@@ -3,14 +3,29 @@
 // Il programma stampa la somma di tutti i numeri inseriti.
 // Esegui questo programma in due versioni, con il for e con il while
 
-let sum = 0;
+// // versione ciclo for
+// let sum = 0;
 
-for(let i = 0; i < 5; i++) {
+// for(let i = 0; i < 5; i++) {
+//     const num = parseInt(prompt('Inserisci un numero'));
+//     sum += num; 
+// }
+
+// console.log('La somma dei numeri inseriti è', sum);
+
+// versione ciclo while
+let sum = 0;
+let i = 0;
+
+while(i < 5) {
     const num = parseInt(prompt('Inserisci un numero'));
     sum += num; 
+
+    i++;
 }
 
 console.log('La somma dei numeri inseriti è', sum);
+
 
 
 // JSnack 2
